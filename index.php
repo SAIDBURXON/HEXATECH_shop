@@ -1,0 +1,1 @@
+<?php include 'includes/header.php'; $p=json_decode(file_get_contents('data/products.json'),true); foreach($p as $x){echo '<h3>'.$x['title'].' - $'.$x['price'].'</h3>'; } include 'includes/footer.php'; ?>
